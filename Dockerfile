@@ -6,7 +6,7 @@ RUN yum -y install epel-release.noarch centos-release-openshift-origin.noarch \
     && yum -y update \
     && pip install --upgrade pip \
     && yum -y install gcc make pyOpenSSL python-devel openssl openssl-devel bind-utils git httpd-tools vim strace origin-clients python2-jmespath \
-    && pip install ansible==2.3.1.0 \
+    && pip install ansible==2.3.2.0 \
     && yum -y erase python-ipaddress \ 
     && yum -y install python-pip \
     && pip install python-openstackclient python-neutronclient python-novaclient python-heatclient python-cinderclient setuptools boto --upgrade \
